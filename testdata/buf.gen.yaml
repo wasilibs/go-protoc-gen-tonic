@@ -1,0 +1,13 @@
+version: v2
+plugins:
+  # tonic requires prost to run
+  - local:
+      - go
+      - run
+      - github.com/wasilibs/go-protoc-gen-prost/cmd/protoc-gen-prost@latest
+    out: ../out/buf/rust
+  - local:
+      - go
+      - run
+      - ../cmd/protoc-gen-tonic
+    out: ../out/buf/rust

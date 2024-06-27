@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/goyek/x v0.1.7
-	github.com/wasilibs/tools v0.0.0-20240627054047-7cd4f6bf06c1
+	github.com/wasilibs/tools v0.0.0-20240627054647-1aadfa8fce7f
 )
 
 require (

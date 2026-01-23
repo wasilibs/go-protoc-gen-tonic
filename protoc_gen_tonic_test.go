@@ -1,4 +1,4 @@
-package protoc_gen_tonic
+package protocgentonic
 
 import (
 	"bytes"

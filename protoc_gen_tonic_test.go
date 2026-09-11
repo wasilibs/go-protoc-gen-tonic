@@ -23,7 +23,7 @@ func TestBuf(t *testing.T) {
 	}
 
 	for _, path := range []string{
-		filepath.Join("out", "buf", "rust", "helloworld.tonic.rs"),
+		filepath.Join("out", "buf", "rust", "helloworld", "helloworld.tonic.rs"),
 	} {
 		if _, err := os.Stat(path); err != nil {
 			t.Errorf("failed to stat %v: %v", path, err)

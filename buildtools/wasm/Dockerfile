@@ -7,7 +7,7 @@ RUN mkdir -p /workspace && curl -L https://github.com/neoeinstein/protoc-gen-pro
 WORKDIR /workspace
 
 ADD buildtools/wasm/version.txt version.txt
-RUN cargo update && cargo update prost-types && cargo update prost && cargo update tonic-build --precise $(sed 's/v//' version.txt) 
+RUN cargo update && cargo update prost-types && cargo update prost && cargo update tonic-build --precise 0.14.6
 RUN cargo build --release --target wasm32-wasip1 -p protoc-gen-tonic
 
 SHELL ["/bin/bash", "-c"]
